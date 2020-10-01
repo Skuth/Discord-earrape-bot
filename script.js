@@ -11,7 +11,7 @@ client.on("ready", () => {
 client.on("message", async message => {
   let msg = message.content
 
-  if (msg.startsWith(PREFIX)) {
+  if (msg.startsWith(PREFIX) && message.channel.type != "dm") {
     msg = msg.split(" ")
 
     if (msg[1] == undefined) {
