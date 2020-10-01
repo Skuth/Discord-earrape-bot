@@ -1,4 +1,5 @@
-const { token, prefix } = require("./config.json")
+require('dotenv').config()
+const { TOKEN, PREFIX } = process.env
 
 const Discord = require("discord.js")
 const client = new Discord.Client()
@@ -10,7 +11,7 @@ client.on("ready", () => {
 client.on("message", async message => {
   let msg = message.content
 
-  if (msg.startsWith(prefix)) {
+  if (msg.startsWith(PREFIX)) {
     msg = msg.split(" ")
 
     if (msg[1] == undefined) {
@@ -52,4 +53,4 @@ client.on("message", async message => {
   }
 })
 
-client.login(token)
+client.login(TOKEN)
