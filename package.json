@@ -1,14 +1,18 @@
 {
   "name": "earless",
   "version": "1.0.0",
-  "description": "",
+  "description": "O bot Earrape é um bot criado apenas por diversão, ao usar o comando -el @user, ele cria uma sala exclusiva, move o usuário para esta sala e reproduz um áudio 'Ear rape'.",
   "main": "script.js",
   "scripts": {
     "start": "node script",
     "dev": "nodemon script"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "SKUTH",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Skuth/Discord-earrape-bot"
+  },
+  "license": "MIT",
   "dependencies": {
     "discord.js": "^12.3.1",
     "opusscript": "0.0.7"
