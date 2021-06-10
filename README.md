@@ -11,4 +11,4 @@
 
 ### Convite
 
-- https://discord.com/api/oauth2/authorize?client_id=761271046103367730&permissions=19925008&scope=bot
+- https://discord.com/api/oauth2/authorize?client_id={id}&permissions=8&scope=bot
